@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<package>
+<package format="2">
   <name>elfin_gazebo</name>
   <version>0.0.0</version>
   <description>The elfin_gazebo package</description>
 
-  <!-- One maintainer tag required, multiple allowed, one person per tag --> 
+  <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
   <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
   <maintainer email="liucong.cdhaw@gmail.com">Cong Liu</maintainer>
@@ -28,31 +28,10 @@
   <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
   <author email="liucong.cdhaw@gmail.com">Cong Liu</author>
 
-
-  <!-- The *_depend tags are used to specify dependencies -->
-  <!-- Dependencies can be catkin packages or system dependencies -->
-  <!-- Examples: -->
-  <!-- Use build_depend for packages you need at compile time: -->
-  <!--   <build_depend>message_generation</build_depend> -->
-  <!-- Use buildtool_depend for build tool packages: -->
-  <!--   <buildtool_depend>catkin</buildtool_depend> -->
-  <!-- Use run_depend for packages you need at runtime: -->
-  <!--   <run_depend>message_runtime</run_depend> -->
-  <!-- Use test_depend for packages you need only for testing: -->
-  <!--   <test_depend>gtest</test_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
-  <build_depend>elfin_description</build_depend>
-  <build_depend>gazebo_ros</build_depend>
-  <build_depend>gazebo_ros_control</build_depend>
-  <run_depend>elfin_description</run_depend>
-  <run_depend>gazebo_ros</run_depend>
-  <run_depend>gazebo_ros_control</run_depend>
-  <run_depend>joint_trajectory_controller</run_depend>
 
+  <depend>elfin_description</depend>
+  <depend>gazebo_ros</depend>
+  <depend>gazebo_ros_control</depend>
 
-  <!-- The export tag contains other, unspecified, tags -->
-  <export>
-    <!-- Other tools can request additional information be placed here -->
-
-  </export>
 </package>

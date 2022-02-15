@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package>
+<package format="2">
   <name>elfin_robot_bringup</name>
   <version>0.0.0</version>
   <description>The elfin_robot_bringup package</description>
@@ -12,9 +12,10 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <run_depend>controller_manager</run_depend>
-  <run_depend>elfin_ros_control</run_depend>
-  <run_depend>elfin_ros_control</run_depend>
-  <run_depend>joint_trajectory_controller</run_depend>
-  <run_depend>robot_state_publisher</run_depend>
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>elfin_ros_control</exec_depend>
+  <exec_depend>elfin_ros_control</exec_depend>
+  <exec_depend>joint_trajectory_controller</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+
 </package>

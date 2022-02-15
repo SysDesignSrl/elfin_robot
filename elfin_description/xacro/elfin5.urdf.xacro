@@ -143,7 +143,7 @@
       </inertial>
     </link>
 
-    <joint name="e${prefix}joint4" type="revolute">
+    <joint name="${prefix}joint4" type="revolute">
       <origin xyz="0.078069 -0.11342 0" rpy="${-pi} 0 0"/>
       <parent link="${prefix}link3"/>
       <child link="${prefix}link4"/>
@@ -211,7 +211,7 @@
       </inertial>
     </link>
 
-    <joint name="e${prefix}joint6" type="revolute">
+    <joint name="${prefix}joint6" type="revolute">
       <origin xyz="0 -0.1065 0" rpy="0 0 0"/>
       <parent link="${prefix}link5"/>
       <child link="${prefix}link6"/>
@@ -235,7 +235,7 @@
       </collision>
       <inertial>
         <origin
-          xyz="-0.0009237 -0.042691 -0.0003367" 
+          xyz="-0.0009237 -0.042691 -0.0003367"
           rpy="0 0 0"/>
         <mass value="${0.147312*density}"/>
         <inertia
