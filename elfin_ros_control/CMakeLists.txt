@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0.2)
 project(elfin_ros_control)
 
 ## Find catkin macros and libraries
@@ -113,9 +113,22 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
+  INCLUDE_DIRS include
 #  LIBRARIES elfin_ros_control
-#  CATKIN_DEPENDS actionlib cmake_modules control_msgs control_toolbox controller_manager hardware_interface joint_limits_interface roscpp sensor_msgs std_msgs trajectory_msgs transmission_interface urdf
+  CATKIN_DEPENDS
+    actionlib
+    cmake_modules
+    control_msgs
+    control_toolbox
+    controller_manager
+    hardware_interface
+    joint_limits_interface
+    roscpp
+    sensor_msgs
+    std_msgs
+    trajectory_msgs
+    transmission_interface
+    urdf
 #  DEPENDS system_lib
 )
 

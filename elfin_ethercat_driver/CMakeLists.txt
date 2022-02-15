@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0.2)
 project(elfin_ethercat_driver)
 
 ## Find catkin macros and libraries
@@ -109,10 +109,21 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
- INCLUDE_DIRS include
- LIBRARIES elfin_ethercat_driver
- CATKIN_DEPENDS controller_manager diagnostic_updater hardware_interface joint_limits_interface roscpp rospy sensor_msgs soem tf trajectory_msgs transmission_interface
- DEPENDS system_lib
+  INCLUDE_DIRS include
+  LIBRARIES elfin_ethercat_driver
+  CATKIN_DEPENDS
+    controller_manager
+    diagnostic_updater
+    hardware_interface
+    joint_limits_interface
+    roscpp
+    rospy
+    sensor_msgs
+    soem
+    tf
+    trajectory_msgs
+    transmission_interface
+# DEPENDS system_lib
 )
 
 ###########
@@ -204,6 +215,3 @@ install(DIRECTORY include/${PROJECT_NAME}/
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
-
-
-

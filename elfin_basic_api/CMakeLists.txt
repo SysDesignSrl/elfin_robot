@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0.2)
 project(elfin_basic_api)
 
 add_compile_options(-std=c++11)
@@ -116,8 +116,15 @@ generate_dynamic_reconfigure_options(
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES elfin_basic_api
-  CATKIN_DEPENDS moveit_core moveit_ros_planning moveit_ros_planning_interface roscpp rospy tf tf_conversions
-  DEPENDS system_lib
+  CATKIN_DEPENDS
+    moveit_core
+    moveit_ros_planning
+    moveit_ros_planning_interface
+    roscpp
+    rospy
+    tf
+    tf_conversions
+#  DEPENDS system_lib
 )
 
 ###########
