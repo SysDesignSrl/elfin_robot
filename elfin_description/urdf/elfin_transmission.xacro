@@ -20,7 +20,7 @@
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
     </transmission>
-    
+
     <transmission name="elfin_joint3_trans">
       <type>transmission_interface/SimpleTransmission</type>
       <joint name="elfin_joint3">
@@ -30,7 +30,7 @@
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
     </transmission>
-    
+
     <transmission name="elfin_joint4_trans">
       <type>transmission_interface/SimpleTransmission</type>
       <joint name="elfin_joint4">
@@ -40,7 +40,7 @@
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
     </transmission>
-    
+
     <transmission name="elfin_joint5_trans">
       <type>transmission_interface/SimpleTransmission</type>
       <joint name="elfin_joint5">
@@ -50,7 +50,7 @@
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
     </transmission>
-    
+
     <transmission name="elfin_joint6_trans">
       <type>transmission_interface/SimpleTransmission</type>
       <joint name="elfin_joint6">
@@ -60,5 +60,5 @@
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
     </transmission>
-    
+
 </robot>

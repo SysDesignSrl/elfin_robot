@@ -4,8 +4,6 @@
   <xacro:macro name="elfin5" params="prefix:='elfin_'">
 
     <xacro:include filename="$(find elfin_description)/urdf/materials.xacro" />
-    <xacro:include filename="$(find elfin_description)/urdf/elfin_robot.gazebo" />
-    <xacro:include filename="$(find elfin_description)/urdf/elfin_transmission.xacro" />
 
     <xacro:property name="density" value="3.09"/>
 

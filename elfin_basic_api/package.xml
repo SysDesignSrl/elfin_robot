@@ -1,34 +1,18 @@
 <?xml version="1.0"?>
-<package format="2">
+<package format="3">
   <name>elfin_basic_api</name>
   <version>0.0.0</version>
-  <description>The elfin_basic_api package</description>
-
-  <!-- One maintainer tag required, multiple allowed, one person per tag -->
-  <!-- Example:  -->
-  <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
-  <maintainer email="liucong.cdhaw@gmail.com">Cong Liu</maintainer>
-
-
-  <!-- One license tag required, multiple allowed, one license per tag -->
-  <!-- Commonly used license strings: -->
-  <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
+  <description>
+    The elfin_basic_api package
+  </description>
   <license>BSD</license>
 
-
-  <!-- Url tags are optional, but mutiple are allowed, one per tag -->
-  <!-- Optional attribute type can be: website, bugtracker, or repository -->
-  <!-- Example: -->
-  <!-- <url type="website">http://wiki.ros.org/elfin_basic_api</url> -->
-
-
-  <!-- Author tags are optional, mutiple are allowed, one per tag -->
-  <!-- Authors do not have to be maintianers, but could be -->
-  <!-- Example: -->
-  <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
   <author email="liucong.cdhaw@gmail.com">Cong Liu</author>
+  <maintainer email="liucong.cdhaw@gmail.com">Cong Liu</maintainer>
 
   <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend condition="$ROS_PYTHON_VERSION == 2">python-setuptools</buildtool_depend>
+  <buildtool_depend condition="$ROS_PYTHON_VERSION == 3">python3-setuptools</buildtool_depend>
 
   <depend>moveit_core</depend>
   <depend>moveit_planners_ompl</depend>
@@ -45,5 +29,8 @@
   <depend>std_srvs</depend>
   <depend>std_msgs</depend>
   <depend>genmsg</depend>
+
+  <depend condition="$ROS_PYTHON_VERSION == 2">wxpython</depend>
+  <depend condition="$ROS_PYTHON_VERSION == 3">python3-wxgtk4.0</depend>
 
 </package>
